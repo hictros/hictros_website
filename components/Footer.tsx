@@ -5,7 +5,7 @@ import { Solutions } from "@/constants";
 
 const Footer = () => {
   return (
-    <section className="flex items-start justify-around w-full py-4 mt-10 mb-5 text-white ">
+    <section className="flex flex-col flex-wrap items-start justify-around w-full gap-5 p-5 py-4 mt-10 mb-5 text-white md:flex-row ">
       <Link href="/" className="grid place-items-center">
         <Image
           src="/images/logo.jpg"

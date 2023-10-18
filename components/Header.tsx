@@ -19,68 +19,90 @@ import { Consulting, Services, Solutions } from "@/constants";
 
 function Header() {
   return (
-    <div className="z-10 flex w-full h-16 gap-24 px-10">
-      <Link href="/" className="flex w-[150px] items-center justify-center">
-        <Image
-          src="/images/logo.jpg"
-          alt="Hictros Logo"
-          width={150}
-          height={50}
-        />
-      </Link>
-      <NavigationMenu>
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Services</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid gap-3 p-6 w-[350px] ">
-                {Services.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    href={component.href}
-                  />
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Consulting</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid gap-3 p-6 w-[350px] ">
-                {Consulting.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    href={component.href}
-                  />
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
-            <NavigationMenuContent className="">
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  ">
-                {Solutions.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
-                  </ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavLink href="/about" title="About" />
-          <NavLink href="/contact" title="Contact" />
-        </NavigationMenuList>
-      </NavigationMenu>
-    </div>
+    <>
+      <div className="z-10 hidden w-full h-16 gap-5 px-5 md:flex md:px-10 lg:gap-24">
+        <Link
+          href="/"
+          className="flex  lg:w-[150px] items-center justify-center"
+        >
+          <Image
+            src="/images/logo.jpg"
+            alt="Hictros Logo"
+            width={150}
+            height={50}
+          />
+        </Link>
+        <NavigationMenu>
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-6 w-[350px] ">
+                  {Services.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      href={component.href}
+                    />
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Consulting</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-6 w-[350px] ">
+                  {Consulting.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      href={component.href}
+                    />
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+              <NavigationMenuContent className="">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  ">
+                  {Solutions.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      href={component.href}
+                    >
+                      {component.description}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavLink href="/about" title="About" />
+            <NavLink href="/contact" title="Contact" />
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
+      <MobileHeader />
+    </>
   );
 }
+
+const MobileHeader = () => {
+  return (
+    <Link
+      href="/"
+      className="flex items-center justify-center w-full md:hidden"
+    >
+      <Image
+        src="/images/logo.jpg"
+        alt="Hictros Logo"
+        width={150}
+        height={50}
+      />
+    </Link>
+  );
+};
 
 const NavLink = ({ href, title }: { href: string; title: string }) => (
   <NavigationMenuItem>

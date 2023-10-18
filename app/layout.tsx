@@ -19,14 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth" data-theme="dark">
       <body className={inter.className}>
-        <div className=" min-h-screen px-24 bg-[#eee]  dark:bg-[#030712fd]">
+        <div className=" min-h-screen px-2 xl:px-24 bg-[#eee]  dark:bg-[#030712fd]">
           <ThemeProvider
             attribute="data-theme"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
-            <main className="flex flex-col px-24 pt-10 bg-background ">
+            <main className="flex flex-col px-2 pt-5 md:px-10 md:pt-10 lg:px-16 xl:px-24 bg-background ">
               <Header />
               {children}
             </main>
