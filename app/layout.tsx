@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth" data-theme="dark">
       <body className={inter.className}>
-        <div className=" min-h-screen px-2 xl:px-24 bg-[#eee]  dark:bg-[#030712fd]">
+        <div className="  px-2 xl:px-24 bg-[#eee]  dark:bg-[#030712fd]">
           <ThemeProvider
             attribute="data-theme"
             defaultTheme="dark"

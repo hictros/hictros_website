@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Hictros",
+  description: "Precision in every circuit",
+};
+
 export default function Home() {
   return (
     <div className="w-full py-5 font-mono text-sm ">
