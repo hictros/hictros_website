@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Hictros IoT</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Hictros Services</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon_1.jpg" rel="icon">
@@ -21,16 +21,16 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Gp
-  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Template Name: eBusiness
+  * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -39,28 +39,44 @@
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
-        <!-- <h1 class="sitename">Hictros</h1>
-        <span>.</span> -->
+        <img src="assets/img/01logo.jpg" alt="">
+        <!-- <h1 class="sitename">Hictros Services</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">Who We Are</a></li>
+          <li><a href="#services">What We Do</a></li>
+          <li><a href="#portfolio">Who We Serve</a></li>
+          <!-- <li><a href="#team">Team</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+           </li>-->
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#contact">Get Started</a>
+      <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
 
     </div>
   </header>
@@ -70,191 +86,198 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-      <div class="container">
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Solving challenges with AIoT</h2>
+            <p>We tackle the toughest challenges through cutting-edge technology, delivering smart, efficient, and scalable solutions for a connected future.</p>
+            <!-- <a href="#featured-services" class="btn-get-started">Get Started</a> -->
+          </div>
+        </div><!-- End Carousel Item -->
 
-        <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-xl-6 col-lg-8">
-            <h2>Revolutionizing IoT Solutions</h2>
-            <p>End-to-End IoT Solutions Tailored to Your Needs</p>
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Driving Digital Transformation</h2>
+            <p>Your trusted partner in digital transformation, delivering intelligent solutions for innovation, efficiency, and sustainable growth.</p>
+            <!-- <a href="#featured-services" class="btn-get-started">Get Started</a> -->
           </div>
-        </div>
+        </div><!-- End Carousel Item -->
 
-        <div class="row gy-4 mt-5 justify-content-center " data-aos="fade-up" data-aos-delay="200">
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <i class="bi bi-binoculars"></i>
-              <h3><a href="">Hardware Design</a></h3>
-            </div>
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Building a Net-Zero Future</h2>
+            <p>We are dedicated to solve climate challenges through innovation in sustainability and decarbonization, helping industries achieve net-zero goals.</p>
+            <!-- <a href="#featured-services" class="btn-get-started">Get Started</a> -->
           </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box">
-              <i class="bi bi-bullseye"></i>
-              <h3><a href="">Firmware Programming</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i class="bi bi-fullscreen-exit"></i>
-              <h3><a href="">Software Development</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon-box">
-              <i class="bi bi-card-list"></i>
-              <h3><a href="">Cloud Integration</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
-            <div class="icon-box">
-              <i class="bi bi-gem"></i>
-              <h3><a href="">Industry 4.0</a></h3>
-            </div>
-          </div>
-        </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
 
       </div>
 
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <!-- <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/about_2.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>Who We Are</h3>
-            <p class="fst-italic">
-              Hictros is at the forefront of IoT technology, committed to providing seamless and integrated solutions for businesses. With expertise in firmware, hardware, software, and cloud services, our team ensures that your IoT infrastructure is robust, scalable, and future-proof.
-            </p>
-            <p>
-              Our Mission is to deliver cutting-edge IoT solutions that enhance connectivity, efficiency, and innovation for businesses worldwide.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </section>/About Section -->
-
     <section id="about" class="about section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-6 order-2 order-lg-1 content">
-            <h2 class="section-title">Who We Are</h2>
-            <p class="lead fst-italic">
-              Hictros is at the forefront of IoT technology, committed to providing seamless and integrated solutions for businesses.
-            </p>
-            <p>
-              With expertise in firmware, hardware, software, and cloud services, our team ensures that your IoT infrastructure is robust, scalable, and future-proof.
-            </p>
-            <div class="mission-box">
-              <h4>Our Mission</h4>
-              <p>
-                To deliver cutting-edge IoT solutions that enhance connectivity, efficiency, and innovation for businesses worldwide.
+
+      <!-- Section Title -->
+       <div class="container section-title" data-aos="fade-up">
+        <h2>WHO WE ARE</h2>
+        <p>Innovators. Problem-Solvers. Tech Pioneers.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100"> -->
+            <img src="assets/img/about.png" alt="" class="img-fluid">
+          <!-- </div> -->
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-0 ps-lg-3">
+<!--               <h3>Our Mission</h3>
+              <p class="fst-italic">
+                To provide innovative solutions to solve customer’s business problems.
               </p>
+              <h3>Our Vision</h3>
+              <p class="fst-italic">
+                To accelerate value realization by crafting innovative digital solutions for our customers and thus become their trusted technology partner.
+              </p> -->
+              <!-- <h1>Digital Future, Delivered Today</h1>
+              <h3>with Cutting-Edge Engineering</h3>
+              <h2>Driving Customer Success Through Innovation</h2>
+              <p class="fst-italic">
+                As the trusted technology partner of choice for leading enterprises and industrial organizations, we design and deliver tailored hardware and software solutions powered by the latest technologies. Our mission is to accelerate digital transformation and empower our customers on their journey toward a smarter, more connected future.
+              </p> -->
+              <!-- <ul>
+                <li>
+                  <i class="bi bi-diagram-3"></i>
+                  <div>
+                    <h4>Ullamco laboris nisi ut aliquip consequat</h4>
+                    <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                  </div>
+                </li>
+              </ul> -->
             </div>
-            <a href="#services" class="btn btn-primary mt-4">Explore Our Services</a>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div class="about-image">
-              <img src="assets/img/about_2.jpg" class="img-fluid" alt="About Hictros">
-            </div>
+
           </div>
         </div>
       </div>
     </section>
+     <!-- /About Section -->
+
+    <!-- Test Section -->
+ <!--    <section id="about" class="about section dark-background">
+  
+      <img src="assets/img/hero-bg.jpg" alt="About Us Background" data-aos="fade-in" class="background-image">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <h2 data-aos="fade-up" data-aos-delay="100">About Hictros</h2>
+            <p data-aos="fade-up" data-aos-delay="200">We specialize in cutting-edge Industrial IoT solutions, helping manufacturers optimize efficiency, minimize downtime, and unlock new operational insights.</p>
+          </div>
+        </div>
+      </div>
+
+  </section> -->
+
+    <!-- /Test Section -->
+
 
     <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Services We Provide</p>
+        <h2>WHAT WE DO</h2>
+        <p>We create smart and secure technology solutions for seamless automation and efficiency.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row g-5">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <i class="bi bi-broadcast-pin icon"></i>
+              <div>
+                <h3>IoT & Embedded Systems</h3>
+                <p>IoT Solutions – Smart, Connected Systems for Industries. Embedded Systems – Custom Hardware and Firmware development.</p>
+                <!-- <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a> -->
               </div>
-              <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Hardware Design</h3>
-              </a>
-              <p>Innovative and reliable hardware design tailored to your specifications, from concept to production.</p>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <i class="bi bi-broadcast icon"></i>
+              <div>
+                <h3>PCB Design & Manufacturing</h3>
+                <p>High Quality, Precision-Engineered PCBs manufactured in India.</p>
+                <!-- <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a> -->
               </div>
-              <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Firmware Programming</h3>
-              </a>
-              <p>Custom firmware development to meet your unique needs, ensuring robust performance and functionality.</p>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <i class="bi bi-easel icon"></i>
+              <div>
+                <h3>Factory & Smart Automation</h3>
+                <p>Intelligent automation for efficient manufacturing.</p>
+                <p>AI-driven smart factories and digital transformation. </p>
+                <p>Control Cabinet & Wire Harness Design.</p>
+                <!-- <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a> -->
               </div>
-              <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Software Development</h3>
-              </a>
-              <p>End-to-end software solutions that integrate seamlessly with your IoT systems, enhancing usability and efficiency.</p>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-red position-relative">
+              <i class="bi bi-camera icon"></i>
+              <div>
+                <h3>Edge AI & Embedded Security</h3>
+                <p>Real-time processing and intelligence at the edge for faster decision-making.</p>
+                <p>Robust protection to safeguard data and devices from cyber threats.</p>
+                <!-- <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a> -->
               </div>
-              <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Edge Computing</h3>
-              </a>
-              <p>Integrating Edge Computing with your IoT infrastructure, enabling you to use de-centralised computing and AI/ML.</p>
-              <!-- <a href="service-details.html" class="stretched-link"></a> -->
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-indigo position-relative">
+              <i class="bi bi-calendar4-week icon"></i>
+              <div>
+                <h3>Gen AI & Data Intelligence</h3>
+                <p>Data Analytics & Insights – Unlock real-time, data-driven decision-making for smarter operations.</p>
+                <p>Generative AI – AI-powered automation, predictive analytics, and intelligent decision-making.</p>
+                <!-- <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a> -->
               </div>
-              <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Industry 4.0</h3>
-              </a>
-              <p>PLC SCADA IIoT M2M Services</p>
-              <!-- <a href="service-details.html" class="stretched-link"></a> -->
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item item-pink position-relative">
+              <i class="bi bi-chat-square-text icon"></i>
+              <div>
+                <h3>Sustainability & Climate Tech</h3>
+                <p>Climate Tech & Decarbonization – Sustainable solutions for a greener future.</p>
+                <!-- <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a> -->
               </div>
-              <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Cloud Integration</h3>
-              </a>
-              <p>Efficient cloud services to support and scale your IoT infrastructure, providing real-time data access and management. We help you integrate with AWS, Azure, Power BI like services.</p>
-              <!-- <a href="service-details.html" class="stretched-link"></a> -->
             </div>
           </div><!-- End Service Item -->
 
@@ -264,104 +287,297 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
 
-      <img src="assets/img/cta-bg_2.jpg" alt="">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
 
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Get in Touch</h3>
-              <p>Whether you’re interested in our IoT solutions or have any inquiries, we’re here to help. Reach out to us for consultations or more information.</p>
-              <a class="cta-btn" href="#contact">Contact Us for a Consultation</a>
-            </div>
-          </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Transform Your Manufacturing Process with
+        <br>Hictros’s Industrial IoT Solutions</h2>
+        <div class="title-shape">
+         <!--  <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg> -->
         </div>
+        <!-- <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "slidesPerView": 1,
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Leading the Future of Industrial IoT</h2>
+                    <p>
+                      As an experienced Industrial IoT (IIoT) company, Hictros seamlessly integrates IoT technology to help you:
+                    </p>
+                    <ul>
+                      <li><strong>Monitor Key Metrics in Real-Time:</strong> Track Key Performance Indicators (KPIs) and Key Health Indicators (KHIs) of your machines directly from the shop floor with our advanced IoT solutions.</li>
+                      <li><strong>Minimize Downtime with Predictive Maintenance:</strong> Proactively reduce equipment failures and downtime with our predictive maintenance capabilities.</li>
+                      <li><strong>Access Insights Instantly:</strong> View critical metrics such as OEE, OLE, and more on a single dashboard, eliminating the need for manual calculations.</li>
+                      <li><strong>Enable Seamless Connectivity:</strong> Connect tools, machines, and sensors to your network, enabling real-time data collection on downtime, inventory, and job status.</li>
+                      <li><strong>Unlock Operational Excellence:</strong> Benefit from task automation, improved efficiency, and enhanced productivity through our leading IoT platform.</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/testimonials/feature_01.jpg" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Real-Time Production Monitoring Accelerator</h2>
+                    <ul>
+                      <li><strong>Seamless Integration:</strong> Effortlessly integrates machine and process data into your manufacturing ecosystem, capturing real-time insights across all parameters.</li>
+                      <li><strong>Enhanced Visibility & Insights:</strong> Gain instant access to key production metrics like rejection rates, rework instances, and loss analysis, driving up to a 30% reduction in rework and rejections.</li>
+                      <li><strong>Performance Optimization with KPI Tracking:</strong> Track critical KPIs such as OEE, OLE, uptime, idle time, and quality metrics to identify improvement areas and enhance production efficiency.</li>
+                      <li><strong>Streamlined Operations & Continuous Improvement:</strong> Boost overall productivity and asset utilization by 15-20% through streamlined operations and ongoing improvement initiatives.</li>
+                  </ul>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/testimonials/feature_02.jpg" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>
+                      Condition-Based & Predictive Maintenance Accelerator
+                    </h2>
+                    <ul>
+                      <li><strong>Advanced Condition Monitoring:</strong> Enables early detection of potential issues, allowing proactive intervention to prevent breakdowns and unplanned outages.</li>
+                      <li><strong>Real-Time Visibility & Alerts:</strong> Provides 24/7 monitoring through a centralized dashboard, offering key asset health insights (MTTR, MTBF). Immediate alerts enable quick action to minimize downtime and enhance reliability.</li>
+                      <li><strong>Predictive Maintenance Analytics:</strong> Utilizes advanced analytics to optimize maintenance schedules, cut costs, and extend asset lifespan by up to 50%.</li>
+                      <li><strong>Optimized Asset Performance:</strong> Enhances operational efficiency, reduces downtime, and ensures continuous availability of critical assets, driving competitiveness in the Industry 4.0 era.</li>
+                  </ul>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/testimonials/feature_03.jpg" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Smart Energy Management Accelerator</h2>
+                    <ul>
+                      <li><strong>Comprehensive Energy Tracking:</strong> Monitors energy distribution across multiple sources (solar, wind, HVAC, bio-gas, gas, battery, genset) to provide actionable insights and optimization opportunities.</li>
+                      <li><strong>Net-Zero Energy KPI Monitoring:</strong> Tracks and analyzes key metrics to optimize energy usage, driving progress toward net-zero energy goals.</li>
+                      <li><strong>Demand Forecasting & Carbon Emission Analysis:</strong> Utilizes advanced analytics to predict energy demand, enhance resource allocation, and manage carbon emissions efficiently.</li>
+                      <li><strong>Custom Reporting & Seamless Integration:</strong> Delivers tailored reports and integrates with MES, ERP, and other systems for enhanced visibility and data-driven decision-making.</li>
+                  </ul>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/testimonials/feature_04.jpg" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Track & Trace Accelerator</h2>
+                    <ul>
+                      <li><strong>Advanced Product Identification:</strong> Assigns unique identifiers (barcode/RFID) for precise tracking of materials across the supply chain.</li>
+                      <li><strong>Real-Time Data Capture & Quality Control:</strong> Enables real-time scanning and quality checks, ensuring compliance with FIFO/LIFO methodologies and product standards.</li>
+                      <li><strong>Actionable Insights & Optimization:</strong> Analyzes tracking data to improve inventory management, product movement, and quality control for enhanced efficiency.</li>
+                      <li><strong>Enhanced Demand Forecasting & Planning:</strong> Leverages historical data and trends to predict demand accurately, optimizing production planning.</li>
+                  </ul>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/testimonials/feature_05.jpg" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+          </div>
+
+          <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
       </div>
 
-    </section><!-- /Call To Action Section -->
+    </section><!-- /Testimonials Section -->
+
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Why Us</h2>
+        <p>We provide trusted, secure, and innovative technology solutions, ensuring reliability and genuine value for our customers.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <!-- <span>01</span> -->
+              <h4><a href="" class="stretched-link">Innovation-Driven</a></h4>
+              <p>Cutting-edge solutions designed to enhance efficiency and performance.</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <!-- <span>02</span> -->
+              <h4><a href="" class="stretched-link">Security First</a></h4>
+              <p>Robust protection ensuring data privacy and system integrity.</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <!-- <span>03</span> -->
+              <h4><a href="" class="stretched-link">Reliable Performance</a></h4>
+              <p>High-quality, scalable solutions built for long-term success.</p>
+            </div>
+          </div><!-- Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Check our Portfolio</p>
+        <h2>WHO WE SERVE</h2>
+        <p>We serve industries and businesses seeking smart, secure, and efficient technology solutions for automation and digital transformation.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
+<!--           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">EV/HV</li>
+            <li data-filter=".filter-product">ESDM</li>
+            <li data-filter=".filter-branding">SEMICONDUSTROR</li>
+            <li data-filter=".filter-books">AVAITION & DRONES</li>
+          </ul> --><!-- End Portfolio Filters -->
+
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-item-inner">
-                <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IoT Data Logger with UI</h4>
-                <p>ESP32 based</p>
+              <div class="portfolio-content h-100">
+                <!-- <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"> -->
+                  <img src="assets/img/portfolio/smart_man_01.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <!-- href="portfolio-details.html" -->
+                  <h4><a title="More Details">SMART MANUFACTURING</a></h4>
+                </div>
               </div>
-              </div>
-              
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-item-inner">
-                <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IoT PlayBoard</h4>
-                <p>service project</p>
+              <div class="portfolio-content h-100">
+                <!-- <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"> -->
+                  <img src="assets/img/portfolio/semi_01.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <!-- href="portfolio-details.html" -->
+                  <h4><a title="More Details">SEMICONDUCTORS</a></h4>
+                </div>
               </div>
+            </div><!-- End Portfolio Item -->
+
+           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <!-- <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"> -->
+                  <img src="assets/img/portfolio/logistic_01.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <!--  href="portfolio-details.html" -->
+                  <h4><a title="More Details"> eCOMMERCE & LOGISTICS</a></h4>
+                </div>
               </div>
-              
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <!-- <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"> -->
+                  <img src="assets/img/portfolio/renew_01.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <!-- href="portfolio-details.html"  -->
+                  <h4><a title="More Details">ENERGY & UTILITY</a></h4>
+                </div>
+              </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-item-inner">
-                <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IoT Data Logger</h4>
-                <p>ESP32 based</p>
+              <div class="portfolio-content h-100">
+                <!-- <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"> -->
+                  <img src="assets/img/portfolio/agri_01.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <!--  href="portfolio-details.html" -->
+                  <h4><a title="More Details"> FOOD & AGRICULTURE</a></h4>
+                </div>
               </div>
-              </div>
-              
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-item-inner">
-                <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-content h-100">
+                <!-- <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"> -->
+                  <img src="assets/img/portfolio/warehouse_01.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4>IoT Controller</h4>
-                  <p>service project</p>
+                  <!--  href="portfolio-details.html" -->
+                  <h4><a title="More Details"> WAREHOUSE AUTOMATION</a></h4>
                 </div>
               </div>
-             
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-item-inner">
-                <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>48V Li-Ion Battery Pack BMS</h4>
-                <p>service project</p>
-              </div>
-              </div>
-              
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-item-inner">
-                <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>AR Application</h4>
-                <p>service project</p>
-              </div>
-              </div>
-              
             </div><!-- End Portfolio Item -->
 
           </div><!-- End Portfolio Container -->
@@ -372,75 +588,6 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 align-items-center justify-content-between">
-
-          <div class="col-lg-5">
-            <img src="assets/img/stats-img_1.jpg" alt="" class="img-fluid">
-          </div>
-
-          <div class="col-lg-6">
-
-            <h3 class="fw-bold fs-2 mb-3">They provide the most valuable pleasure as it were</h3>
-            <p>
-              It is important to take care of the client, to be followed by the client, but it will happen at such a time that there is a lot of work and pain. Work is pleasure.
-            </p>
-
-            <div class="row gy-4">
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-emoji-smile flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> <span>PAN India</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-journal-richtext flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Projects</strong> <span>Hardware and Software</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-headset flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="3600" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Hours Of Support</strong>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-people flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Hard Workers</strong>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -448,44 +595,87 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Contact Us</p>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.557824984397!2d77.6285486!3d12.9469127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x420af11174f6d931%3A0xe6cc19fa28599b5c!2sHictros%20Industries%20Pvt%20Ltd%2C%20Ejipura!5e0!3m2!1sen!2sin!4v1721827322300!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <!-- <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-        </div><!-- End Google Maps -->
+        <div class="row gy-4">
 
-        <div class="row gy-1">
+          <div class="col-lg-6">
 
-          <div class="col-lg-10">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>No. 57/5, 3rd Floor, 15th Cross, Ejipura Main Road, Bengaluru - 560047</p>
-              </div>
-            </div><!-- End Info Item -->
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>No. 57/5, 3rd Floor, 15th Cross, Ejipura,</p>
+                  <p>Bengaluru - 560047</p>
+                </div>
+              </div><!-- End Info Item -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+91 9078416675</p>
-              </div>
-            </div><!-- End Info Item -->
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+91 9078416675</p>
+                  <!-- <p>+1 6678 254445 41</p> -->
+                </div>
+              </div><!-- End Info Item -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@hictros.com / sales@hictros.com</p>
-              </div>
-            </div><!-- End Info Item -->
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>sales@hictros.com</p>
+                  <p>info@hictros.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday</p>
+                  <p>10:00AM - 07:00PM</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
 
           </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
 
         </div>
 
@@ -497,51 +687,11 @@
 
   <footer id="footer" class="footer dark-background">
 
-    <div class="footer-top">
+    <!-- <div class="footer-newsletter">
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Hictros</span>
-            </a>
-            <div class="footer-contact pt-3">
-              <p>No. 57/5, 3rd Floor, 15th Cross, Ejipura Main Road</p>
-              <p>Bengaluru - 560047</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+91 9078416675</span></p>
-              <p><strong>Email:</strong> <span>info@hictros.com / sales@hictros.com</span></p>
-            </div>
-            <!-- <div class="social-links d-flex mt-4">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div> -->
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#about"> About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#services"> Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Hardware Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Firmware Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Software Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Cloud Integration</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Industry 4.0</a></li>
-            </ul>
-          </div>
-
-          <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
-            <h4>Our Newsletter</h4>
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form action="forms/newsletter.php" method="post" class="php-email-form">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
@@ -550,21 +700,66 @@
               <div class="sent-message">Your subscription request has been sent. Thank you!</div>
             </form>
           </div>
- -->
         </div>
+      </div>
+    </div> -->
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <!-- <span class="sitename">Hictros Industries Pvt Ltd</span> -->
+          </a>
+          <div class="footer-contact pt-3">
+            <!-- <p>Moving Businesses by AIoT</p> -->
+            <img src="assets/img/logo_4.png" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Who We Are</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">What We Do</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>What We Do</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">IoT & Embedded Systems</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Factory & Smart Automation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">EdgeAI & Embedded Security</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">PCB Design & Manufacturing</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Gen AI & Data Intelligence</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Sustainability & Climate Tech</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+          <div class="social-links d-flex">
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a> -->
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="copyright">
-      <div class="container text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Hictros</strong> <span>All Rights Reserved</span></p>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
-        </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Hictros Industries Pvt Ltd</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
@@ -580,11 +775,10 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
